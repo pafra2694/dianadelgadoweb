@@ -1,0 +1,150 @@
+@font-face {
+    font-family: "Helvetica2";
+    src: url("/resources/fonts/HelveticaNeueDeskInterface.ttc");
+}
+
+html{
+    font-size: 62.5%; /*1rem = 10px*/
+}
+
+body{
+    font-size: 1.6rem;
+    background-color: #E5E5E7;
+    font-family: Helvetica;
+}
+
+.contenedorPrincipal {
+    width: 80%;
+    height: 100vh;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 1116px) {
+     .contenedorPrincipal{
+        width: 90%;
+     }
+}
+
+.contenedorImagen {
+    width: 100%;
+    overflow: hidden;
+}
+
+.contenedorImagen img{
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.contenedorPrincipal p{
+    font-size: 2.125rem;
+    
+}
+
+.navPrincipal{
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+    padding-left: 0;
+}
+
+@media (max-width: 682px) {
+    .contenedorPrincipal{
+        width: 95%;
+     }
+
+    .navPrincipal{
+        flex-direction: column;
+    }
+
+    .mobile{
+        display: block;
+    }
+
+    .desktop{
+        display: none;
+    }
+
+    .navPrincipal li{
+        font-size: 1.325rem;
+    }
+
+    .navRedes img{
+        width: 2rem;
+    }
+}
+
+.navPrincipal li{
+    padding: 1rem 2rem;
+    font-weight: 500;
+}
+
+.navPrincipal a:link, .navPrincipal a:visited{
+   color: grey;
+}
+.navPrincipal a:hover{
+    font-weight: bold;
+    transition: 0.3s;
+}
+.navPrincipal a:active{
+    font-weight: bold;
+    color: black;
+}
+
+
+.navPrincipal a{
+    text-decoration: none;  
+}
+
+.navRedes{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.logos{
+    width: 3rem;
+    color: grey;
+}
+
+.abajo{
+    width: 100%;
+    margin: 0 auto;
+    position: fixed;
+    bottom: 0;
+}
+
+.abajo ul{
+    padding-left: 0;
+}
+
+.navRedes li{
+    padding: 0 2rem;
+}
+
+.navRedes a:link, .navRedes a:visited{
+    color: grey;
+ }
+ .navRedes a:hover img{
+     scale: 1.5;
+     transition-duration: 0.3s;
+ }
+ .navRedes a:active{
+     color: black;
+ }
+
+.navRedes a{
+    text-decoration: none;
+}
