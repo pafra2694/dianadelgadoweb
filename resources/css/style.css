@@ -1,3 +1,5 @@
+/* Propiedades Generales */
+
 @font-face {
     font-family: "Helvetica2";
     src: url("/resources/fonts/HelveticaNeueDeskInterface.ttc");
@@ -5,7 +7,15 @@
 
 html{
     font-size: 62.5%; /*1rem = 10px*/
+    box-sizing: border-box;
 }
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 
 body{
     font-size: 1.6rem;
@@ -14,7 +24,7 @@ body{
 }
 
 .contenedorPrincipal {
-    width: 80%;
+    width: 90%;
     height: 100vh;
     margin: 0 auto;
     text-align: center;
@@ -28,11 +38,8 @@ body{
     display: none;
 }
 
-@media only screen and (max-width: 1116px) {
-     .contenedorPrincipal{
-        width: 90%;
-     }
-}
+/* ----------------------------PAGINA DE INTRODUCCIÓN---------------------- */
+/* Logotipo */
 
 .contenedorImagen {
     width: 100%;
@@ -46,18 +53,34 @@ body{
     display: block;
 }
 
+/* Mision */
 .contenedorPrincipal p{
-    font-size: 2.125rem;
-    
+    font-weight: 400;
+    text-transform: uppercase;
+    line-height: 3rem;
+    letter-spacing: 0.2rem;
+    font-size: 1.6rem;
+    padding: 0 25rem;
+    color: hwb(0 44% 56%);
 }
 
+@media only screen and (max-width: 1331px){
+    .contenedorPrincipal p{
+        padding: 0 5rem;
+    }
+}
+
+/* Navegación principal */
 .navPrincipal{
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     list-style: none;
     flex-wrap: wrap;
     text-transform: uppercase;
     padding-left: 0;
+    min-height: 5rem;
+    margin: auto 0;
 }
 
 @media (max-width: 682px) {
@@ -65,8 +88,12 @@ body{
         width: 95%;
      }
 
+    .contenedorPrincipal p{
+        display: none;
+    }
     .navPrincipal{
         flex-direction: column;
+        min-height: 20rem;
     }
 
     .mobile{
@@ -92,21 +119,22 @@ body{
 }
 
 .navPrincipal a:link, .navPrincipal a:visited{
-   color: grey;
+    font-weight: 400;
+    text-decoration: underline;
+    color: blueviolet;
 }
 .navPrincipal a:hover{
     font-weight: bold;
-    transition: 0.3s;
+    font-size: 1.2em;
+    text-decoration: none;
+    transition: 0.2s;
 }
 .navPrincipal a:active{
     font-weight: bold;
     color: black;
 }
 
-
-.navPrincipal a{
-    text-decoration: none;  
-}
+/*  Navegación de redes sociales */
 
 .navRedes{
     display: flex;
@@ -135,14 +163,17 @@ body{
 }
 
 .navRedes a:link, .navRedes a:visited{
-    color: grey;
+    opacity: 0.4;
  }
  .navRedes a:hover img{
      scale: 1.5;
      transition-duration: 0.3s;
  }
+ .navRedes a:hover{
+    opacity: 0.6;
+ }
  .navRedes a:active{
-     color: black;
+     opacity: 1;
  }
 
 .navRedes a{
