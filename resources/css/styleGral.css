@@ -1,0 +1,122 @@
+/* Propiedades Grales */
+/* *{
+    border: 1px solid red;
+} */
+html{
+    font-size: 62.5%; /*1rem = 10px*/
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body{
+    font-size: 1.6rem;
+    background-color: #E5E5E7;
+    font-family: Helvetica;
+}
+
+/* Header */
+
+.contenedorP {
+    max-width: 70%;
+    margin: 0 auto;
+}
+
+.contenedorP__imagen{
+    margin: 2rem 0;
+    min-height: 14rem;
+    width: auto;
+    background-image: url(/resources/img/logohorizontal.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.contenedorP ul{
+    min-height: 3rem;
+    margin: 3rem auto;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    padding: 0; 
+}
+
+.contenedorP__nav a{
+    text-decoration: none;
+    padding: 0 2rem;
+}
+
+.contenedorP__nav a:link, .navPrincipal a:visited{
+    font-weight: 400;
+    text-decoration: none;
+    color: blueviolet;
+}
+.contenedorP__nav a:hover{
+    font-weight: bold;
+    font-size: 1.2em;
+    text-decoration: none;
+    transition: 0.2s;
+}
+.contenedorP__nav a:active{
+    font-weight: bold;
+    color: black;
+}
+
+/* Nav redes */
+.navRedes{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.logos{
+    width: 3rem;
+    color: grey;
+}
+
+.abajo{
+    width: 100%;
+    margin: 0 auto;
+    position: fixed;
+    bottom: 0;
+}
+
+@media only screen and (max-height: 420px){
+    .abajo{
+        position: relative;
+        bottom: 0;
+    }
+}
+
+.abajo ul{
+    padding-left: 0;
+}
+
+.navRedes li{
+    padding: 0 2rem;
+}
+
+.navRedes a:link, .navRedes a:visited{
+    opacity: 0.4;
+ }
+ .navRedes a:hover img{
+     scale: 1.5;
+     transition-duration: 0.3s;
+ }
+ .navRedes a:hover{
+    opacity: 0.6;
+ }
+ .navRedes a:active{
+     opacity: 1;
+ }
+
+.navRedes a{
+    text-decoration: none;
+}

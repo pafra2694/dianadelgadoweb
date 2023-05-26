@@ -1,5 +1,4 @@
 /* Propiedades Generales */
-
 @font-face {
     font-family: "Helvetica2";
     src: url("/resources/fonts/HelveticaNeueDeskInterface.ttc");
@@ -122,7 +121,7 @@ body{
 
 .navPrincipal a:link, .navPrincipal a:visited{
     font-weight: 400;
-    text-decoration: underline;
+    text-decoration: none;
     color: blueviolet;
 }
 .navPrincipal a:hover{
